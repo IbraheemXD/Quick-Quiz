@@ -16,23 +16,58 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg">
     <title>Quick Quiz</title>
 </head>
 
 <body>
     <h1 class="heading-primary">Quick Quiz</h1>
-    <div class="starter-1">
-        <div class="wrapper-1">
-            <button class="btn btn-start-1">
-                <i class="fas fa-play icon icon-1"></i>
-            </button>
-            <img class="img geo-img" src="images/historia1.png" alt="geoprahy">
-        </div>
 
-        <h2 class="heading-secondary">World History</h2>
-        <p>You will get 15s to answer each question. And 10 points for the correct answer.</p>
+    <div class="loading-screen hide">
+        <div class="spinner-circle"></div>
     </div>
-    <div class="quiz-1">
+
+    <div class="container">
+        <div class="starter-1">
+            <div class="wrapper-1">
+                <button class="btn btn-start-1">
+                    <i class="fas fa-play icon icon-1"></i>
+                </button>
+                <img class="img geo-img" src="images/historia1.png" alt="geoprahy">
+            </div>
+
+            <select name="trivia_category" class="selector category-selector">
+                <option value="any">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="10">Entertainment: Books</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                <option value="14">Entertainment: Television</option>
+                <option value="15">Entertainment: Video Games</option>
+                <option value="16">Entertainment: Board Games</option>
+                <option value="17">Science &amp; Nature</option>
+                <option value="18">Science: Computers</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Vehicles</option>
+                <option value="29">Entertainment: Comics</option>
+                <option value="30">Science: Gadgets</option>
+                <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                <option value="32">Entertainment: Cartoon &amp; Animations</option>
+            </select>
+            <p>You will get 20s to answer each question. And 10 points for the correct answer.</p>
+        </div>
+    </div>
+
+    <div class="quiz-container hide silde-animation">
         <div class="counter">
             <p>Question <span class="question_num">&nbsp;</span>/<span class="total_questions">&nbsp;</span></p>
         </div>
@@ -44,14 +79,13 @@
             <button class="option option-3">&nbsp;</button>
             <button class="option option-4">&nbsp;</button>
             <button class="btn-next" disabled>Next</button>
-
         </div>
 
 
     </div>
 
-    <div class="f-center">
-        <div class="finish-screen">
+    <div class="score-container hide">
+        <div class="finish-screen slideDown-aim">
             <h1>Finish</h1>
             <p class="rating">&nbsp;</p>
             <h2>Score <span class="score">&nbsp;</span>/<span class="total_score">&nbsp;</span></h2>

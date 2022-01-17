@@ -1,4 +1,4 @@
-let quiz = [
+let quiz_optional = [
   {
     question: "Which is considered as oldest civilization of the world?",
     answer: "Mesopotamian Civilization",
